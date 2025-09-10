@@ -1,0 +1,97 @@
+.subscription-page {
+  padding: 60px 24px;
+  background: radial-gradient(circle at top left, #910fc9 0%, transparent 40%),
+              radial-gradient(circle at bottom right, #2b003a 0%, #0d0013 80%),
+              linear-gradient(135deg, #0f001a 0%, #1a002f 100%);
+  background-blend-mode: screen, lighten, normal;
+  min-height: 100vh;
+  color: #eee;
+}
+
+.subscription-title {
+  font-weight: 700;
+  color: #ff6f61;
+}
+
+.plan-card {
+  background: #1e152d;
+  border-radius: 16px;
+  padding: 32px 24px;
+  color: #ddd;
+  box-shadow: 0 4px 15px rgba(255, 111, 97, 0.15);
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  box-shadow: 0 8px 30px rgba(255, 111, 97, 0.4);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #ff6f61;
+  color: white;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.plan-name {
+  color: #ff6f61;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffa892;
+}
+
+.plan-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+  color: #ccc;
+}
+
+.plan-features li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+}
+
+.plan-features li::before {
+  content: "✓";
+  color: #ff6f61;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 900;
+}
+
+.subscribe-button {
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 12px 0;
+  font-size: 1.1rem;
+}
+
+.subscribe-button.ant-btn-primary {
+  background-color: #ff6f61;
+  border: none;
+}
+
+.subscribe-button.ant-btn-primary:hover {
+  background-color: #e05b51;
+}

@@ -1,0 +1,47 @@
+.courses-page {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.course-card {
+  border-radius: 12px !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #6a11cb;
+}
+
+/* Footer inside cards */
+.course-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Entry Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
